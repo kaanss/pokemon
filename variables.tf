@@ -3,32 +3,6 @@ variable "name" {
   default     = ""
 }
 
-variable "cidr" {
-  description = "The CIDR block for the VPC"
-  default     = ""
-}
-
-variable "instance_tenancy" {
-  description = "A tenancy option for instances launched into the VPC"
-  default     = "default"
-}
-
-variable "public_subnets" {
-  description = "A list of public subnets inside the VPC."
-  default     = []
-}
-
-variable "private_subnets" {
-  description = "A list of private subnets inside the VPC."
-  default     = []
-}
-
-variable "database_subnets" {
-  type        = "list"
-  description = "A list of database subnets"
-  default     = []
-}
-
 variable "create_database_subnet_group" {
   description = "Controls, if should database subnet group be created."
   default     = true
